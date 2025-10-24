@@ -170,7 +170,7 @@ export default function Footer() {
         <div className="footer-main">
           {/* Brand Column */}
           <div className="footer-brand">
-            <a href="#"><img loading="lazy" src="/images/Brand_1Brand.webp" alt="Yess Logo" className="footer-logo" /></a>
+            <a href="/"><img loading="lazy" src="/images/Brand_1Brand.webp" alt="Yess Logo" className="footer-logo" /></a>
             <p className="footer-description">Yess is the agentic operating system that turns every rep into a top 1% performer.</p>
 
             <div className="footer-info-block">
@@ -215,10 +215,10 @@ export default function Footer() {
           {/* Products Column */}
           <div className="footer-column">
             <h3 className="footer-column-title">Products</h3>
-            <a href="products/salesforce-ai-agent" className="footer-link">Salesforce AI Agent</a>
-            <a href="products/linkedin-ai-agent" className="footer-link">LinkedIn AI Agent</a>
-            <a href="products/executive-outreach-agent" className="footer-link">Executive Outreach Agent</a>
-            <a href="products/lead-recommendation-agent" className="footer-link">Lead Recommendation Agent</a>
+            <a href="/products/salesforce-ai-agent" className="footer-link">Salesforce AI Agent</a>
+            <a href="/products/linkedin-ai-agent" className="footer-link">LinkedIn AI Agent</a>
+            <a href="/products/executive-outreach-agent" className="footer-link">Executive Outreach Agent</a>
+            <a href="/products/lead-recommendation-agent" className="footer-link">Lead Recommendation Agent</a>
           </div>
 
           {/* Company Column */}
@@ -232,12 +232,12 @@ export default function Footer() {
           {/* Resources Column */}
           <div className="footer-column">
             <h3 className="footer-column-title">Resources</h3>
-            <a href="legal/privacy-policy" className="footer-link">Privacy Policy</a>
-            <a href="legal/terms-of-use" className="footer-link">Terms of Use</a>
-            <a href="legal/terms-of-service" className="footer-link">Terms of Service</a>
-            <a href="legal/data-processing-addendum" className="footer-link">DPA</a>
-            <a href="legal/service-level-agreement" className="footer-link">SLA</a>
-            <a href="legal/sub-processors" className="footer-link">Sub processors</a>
+            <a href="/legal/privacy-policy" className="footer-link">Privacy Policy</a>
+            <a href="/legal/terms-of-use" className="footer-link">Terms of Use</a>
+            <a href="/legal/terms-of-service" className="footer-link">Terms of Service</a>
+            <a href="/legal/data-processing-addendum" className="footer-link">DPA</a>
+            <a href="/legal/service-level-agreement" className="footer-link">SLA</a>
+            <a href="/legal/sub-processors" className="footer-link">Sub processors</a>
           </div>
         </div>
 
@@ -245,9 +245,9 @@ export default function Footer() {
         <div className="footer-bottom">
           <div className="footer-copyright">© 2025 Yess. All rights reserved.</div>
           <div className="footer-legal">
-            <a href="legal/privacy-policy">Privacy</a>
-            <a href="legal/terms-of-use">Terms</a>
-            <a href="legal/terms-of-service">Service Terms</a>
+            <a href="/legal/privacy-policy">Privacy</a>
+            <a href="/legal/terms-of-use">Terms</a>
+            <a href="/legal/terms-of-service">Service Terms</a>
           </div>
         </div>
       </div>
