@@ -71,6 +71,12 @@ const nextConfig: NextConfig = {
 
   async redirects() {
     return [
+      // Redirect index.html to root
+      {
+        source: '/index.html',
+        destination: '/',
+        permanent: true,
+      },
       // Product page clean URLs
       {
         source: '/products/salesforce-ai-agent.html',
@@ -132,11 +138,6 @@ const nextConfig: NextConfig = {
       {
         source: '/login.html',
         destination: '/login',
-        permanent: true,
-      },
-      {
-        source: '/index.html',
-        destination: '/',
         permanent: true,
       },
       {
