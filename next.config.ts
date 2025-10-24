@@ -135,6 +135,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: '/index.html',
+        destination: '/',
+        permanent: true,
+      },
+      {
         source: '/blog',
         destination: '/post',
         permanent: true,
