@@ -1,0 +1,128 @@
+{
+  "company": {
+    "name": "Yess",
+    "tagline": "Your Agentic AE.",
+    "description": "The agentic operating system that turns every rep into a top performer.",
+    "industry": [
+      "Enterprise Sales Technology",
+      "Agentic AI",
+      "Sales Execution Software"
+    ]
+  },
+  "product": {
+    "name": "Yess Agentic Operating System",
+    "type": "Agentic Operating System for Enterprise Sales",
+    "description": "Yess is an agentic operating system for enterprise sales teams. Our platform gives every account executive an 'Agentic AE'—an AI partner that embeds the craft and process of a top 1% seller to automate complex sales execution, such as multi-threading and relationship orchestration. The result is a scalable system that turns every seller into a high-performer."
+  },
+  "key_features": [
+    {
+      "name": "Agentic Relationship Selling",
+      "description": "Automatically maps buying committees, identifies relationship gaps, and executes multi-threading plays to build consensus and orchestrate stakeholder engagement."
+    },
+    {
+      "name": "Executable Mutual Action Plans",
+      "description": "Goes beyond static documents to actively manage timelines, execute follow-ups, and ensure deal momentum is never lost to inaction."
+    },
+    {
+      "name": "Proactive Risk Detection",
+      "description": "Surfaces unseen threats, such as fading engagement or single-threaded deals, and provides actionable plays to get deals back on track."
+    },
+    {
+      "name": "AI Twin Co-pilot",
+      "description": "Serves as the rep's intelligent partner for the entire deal lifecycle, holding the collective wisdom of every successful deal and guiding next steps."
+    }
+  ],
+  "integrations": [
+    "Salesforce",
+    "Slack",
+    "Google Workspace",
+    "Gmail",
+    "Google Calendar",
+    "Microsoft 365",
+    "Outlook",
+    "Gong"
+  ],
+  "use_cases": [
+    {
+      "title": "Multi-threading & Relationship Orchestration",
+      "description": "Automate the process of identifying and engaging the entire buying committee, ensuring no deal is lost due to a single point of failure."
+    },
+    {
+      "title": "Deal Execution Automation",
+      "description": "Eliminate manual work by having the Agentic AE draft outreach, execute follow-ups, and update Salesforce, freeing reps to focus on strategy."
+    },
+    {
+      "title": "Performance Gap Closure",
+      "description": "Systematize elite execution to close the gap between top and average performers, making high performance your new baseline."
+    }
+  ],
+  "target_audience": {
+    "primary": "Enterprise B2B sales organizations",
+    "personas": [
+      "CROs & VPs of Sales who need a predictable revenue engine.",
+      "Sales Managers who need to scale coaching and enforce methodology.",
+      "Account Executives who need to master complex deals and automate execution."
+    ],
+    "company_size": "Enterprise and mid-market B2B companies with complex sales cycles."
+  },
+  "value_propositions": [
+    "Close the performance gap between top and average sellers.",
+    "Systematize elite sales execution across the entire team.",
+    "Reduce ramp time for new hires from months to days.",
+    "Scale your winning methodology across the entire sales floor.",
+    "Human-in-the-loop execution with AI doing the preparation work.",
+    "Enterprise-grade security and deep integration with your stack."
+  ],
+  "competitive_advantages": [
+    "We are an active executor, not a passive analyzer.",
+    "We embed the craft and process of a top 1% seller into AI.",
+    "Our model uses agentic execution with human-in-the-loop approval.",
+    "We provide four core agentic workflows, not just suggestions.",
+    "Our platform is purpose-built for enterprise sales complexity."
+  ],
+  "faq": [
+    {
+      "question": "What is Yess?",
+      "answer": "Yess is an agentic operating system for enterprise sales teams. Our platform gives every account executive an 'Agentic AE'—an AI partner that embeds the craft and process of a top 1% seller to automate complex sales execution, such as multi-threading and relationship orchestration. The result is a scalable system that turns every seller into a high-performer."
+    },
+    {
+      "question": "What is an Agentic AE and how is it different from other sales AI?",
+      "answer": "An Agentic AE is an AI partner that moves beyond passive analysis and into active execution. While other tools suggest what to do, an Agentic AE drafts the emails, prepares the plays, and orchestrates the stakeholders required to win a deal. It's an active executor that handles the manual work, with a human-in-the-loop for final approval, not a passive analyzer that creates more tasks."
+    },
+    {
+      "question": "Who is Yess for?",
+      "answer": "Yess is designed for B2B enterprise sales organizations. It provides the most value to: - Sales Leaders (CROs, VPs) who need to close the performance gap and build a predictable revenue engine. - Sales Managers who need to scale their coaching and enforce their winning methodology. - Account Executives who need to master complex deals and automate manual execution."
+    },
+    {
+      "question": "How does Yess improve sales performance?",
+      "answer": "Yess improves sales performance by systematizing elite execution. Our platform closes the gap between top and average performers by embedding a winning methodology into an agentic AI. This leads to three key outcomes: 1. Increased win rates by mastering deal complexity. 2. Reduced ramp time for new hires. 3. The ability to scale what works across the entire sales floor."
+    },
+    {
+      "question": "What are the core features of the Yess platform?",
+      "answer": "The Yess operating system is built on four core agentic workflows: 1. Agentic Relationship Selling to orchestrate multi-threading. 2. Executable Mutual Action Plans to maintain deal momentum. 3. Proactive Risk Detection to surface unseen threats. 4. An AI Twin that serves as the rep's co-pilot for the entire deal."
+    },
+    {
+      "question": "Which tools does Yess integrate with?",
+      "answer": "Yess integrates seamlessly into your existing GTM stack to act as its execution layer. Key integrations include Salesforce, Slack, Google Workspace (Gmail, Calendar), Microsoft 365 (Outlook), and Gong. Our platform turns passive data from these tools into proactive, agentic action without disrupting your team's workflow."
+    },
+    {
+      "question": "How does the 'human-in-the-loop' system work?",
+      "answer": "Our 'human-in-the-loop' model ensures your team is always in control. The Agentic AE performs the preparation and execution work—like drafting an outreach email or a follow-up—and delivers it as an actionable suggestion in Slack. The user simply reviews the action and approves it with a single click. The AI does the work; the human makes the strategic decision."
+    },
+    {
+      "question": "Is Yess secure for enterprise companies?",
+      "answer": "Yes, Yess is built with enterprise-grade security as a foundational principle. We understand the security and compliance needs of large organizations and ensure that our platform integrates securely with your core systems like Salesforce and Slack, protecting your data and your customers' data at every step."
+    }
+  ],
+  "contact": {
+    "website": "https://www.yess.ai",
+    "demo": "https://www.yess.ai#demo",
+    "login": "https://www.yess.ai/login.html"
+  },
+  "metadata": {
+    "last_updated": "2025-10-23",
+    "version": "2.0",
+    "purpose": "Machine-readable company information for AI engines and chatbots",
+    "ai_optimization": true
+  }
+}

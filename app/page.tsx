@@ -122,8 +122,8 @@ export default function Home() {
       {/* CTA Section */}
       <CTA />
 
-      {/* Footer */}
-      <Footer />
+        {/* Footer */}
+        <Footer />
       </main>
 
       {/* Hero decorative images - positioned absolutely */}

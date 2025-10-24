@@ -7,7 +7,6 @@ const nextConfig: NextConfig = {
   // Ensure Next.js handles its own routes first
   async rewrites() {
     return {
-      beforeFiles: [],
       afterFiles: [
         // ONLY rewrite these specific paths to static HTML
         // afterFiles means Next.js routes are checked FIRST
@@ -67,7 +66,6 @@ const nextConfig: NextConfig = {
           destination: '/legal/sub-processors.html',
         },
       ],
-      fallback: [],
     };
   },
 

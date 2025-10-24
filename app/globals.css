@@ -458,5 +458,4 @@ body {
   position: relative !important;
 }
 
-/* Import Navigation Override Styles */
-@import '../styles/navigation-override.css';
+/* Navigation override styles are now included inline above */
