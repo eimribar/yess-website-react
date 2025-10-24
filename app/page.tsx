@@ -1,67 +1,93 @@
-import { Header } from '@/components/ui/header';
+'use client';
+
+import { useEffect } from 'react';
 import Orb from '@/components/Orb';
 
 export default function Home() {
+  useEffect(() => {
+    // Animate hero text - splits text into individual letters with staggered animation
+    function animateText(elementId: string, showUnderline: boolean) {
+      const animatedText = document.getElementById(elementId);
+      if (!animatedText) return;
+
+      const text = animatedText.textContent || '';
+      const letters = Array.from(text);
+
+      // Clear the original text
+      animatedText.textContent = '';
+
+      // Create wrapper for letters
+      const lettersContainer = document.createElement('span');
+      lettersContainer.style.display = 'inline-flex';
+      lettersContainer.style.position = 'relative';
+      lettersContainer.style.flexWrap = 'nowrap';
+
+      // Create individual letter spans with staggered delays
+      letters.forEach((letter, index) => {
+        const span = document.createElement('span');
+        span.className = 'animated-letter';
+        span.textContent = letter === ' ' ? '\u00A0' : letter;
+        span.style.animationDelay = `${index * 0.1}s`;
+        lettersContainer.appendChild(span);
+      });
+
+      // Create animated underline only if requested
+      if (showUnderline) {
+        const underline = document.createElement('div');
+        underline.className = 'animated-underline';
+        underline.style.animationDelay = `${letters.length * 0.1}s`;
+        lettersContainer.appendChild(underline);
+      }
+
+      // Append letters container
+      animatedText.appendChild(lettersContainer);
+    }
+
+    // Animate hero text (without underline)
+    animateText('animated-hero-text', false);
+  }, []);
+
   return (
     <>
-      <Header />
-      <main className="min-h-screen">
-        {/* Hero Section */}
-        <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-gradient-to-b from-background to-muted/20">
-          <div className="container relative z-10 mx-auto px-4">
-            <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-12">
-              {/* Left side - Hero text */}
-              <div className="flex flex-col justify-center space-y-6">
-                <h1 className="text-5xl font-bold leading-tight tracking-tight lg:text-6xl xl:text-7xl">
-                  AI for Agentic{' '}
-                  <span className="bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-                    Selling
-                  </span>{' '}
-                  & Multithreading
-                </h1>
-                <p className="text-xl text-muted-foreground lg:text-2xl">
-                  Yess is the Agentic AE for Salesforce. Automatically research prospects,
-                  draft personalized emails, and orchestrate multi-threaded outreach at scale.
-                </p>
-                <div className="flex flex-wrap gap-4">
-                  <a
-                    href="/book-a-demo"
-                    className="inline-flex h-11 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground hover:bg-primary/90"
-                  >
-                    Get Started
-                  </a>
-                  <a
-                    href="#how-it-works"
-                    className="inline-flex h-11 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium hover:bg-accent hover:text-accent-foreground"
-                  >
-                    Learn More
-                  </a>
-                </div>
-              </div>
+      <div className="section_hero">
+        {/* Orb Background */}
+        <div className="hero-orb-container" id="hero-orb">
+          <Orb hue={166} hoverIntensity={0.3} rotateOnHover={true} />
+        </div>
 
-              {/* Right side - Orb */}
-              <div className="flex items-center justify-center">
-                <div className="relative h-[400px] w-[400px] lg:h-[500px] lg:w-[500px]">
-                  <Orb hue={166} hoverIntensity={0.3} rotateOnHover={true} />
+        <div className="padding-global">
+          <div className="container-large">
+            <div className="padding-section-large is-hero no-pad-bottom">
+              <div className="flex-vertical">
+                <div data-sequence="3" className="container-title">
+                  <h1 className="heading-style-h1 is-hero-large">
+                    Meet Yess.<br />
+                    <span id="animated-hero-text">Your Agentic AE.</span>
+                  </h1>
+                  <p className="paragraph_title is-hero-large">
+                    Yess is the agentic operating system that<br />
+                    turns every rep into a top performer.
+                  </p>
+                </div>
+                <div data-sequence="4" className="hero-cta-container">
+                  <a href="/book-a-demo" className="button w-button">
+                    Book a Demo
+                  </a>
+                  <a href="/login" className="button is-secondary w-button">
+                    Start Now
+                  </a>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
 
-          {/* Background gradient overlay */}
-          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
-        </section>
-
-        {/* Placeholder sections - we'll build these next */}
-        <section className="container mx-auto px-4 py-16">
-          <div className="text-center">
-            <h2 className="text-3xl font-bold">More sections coming soon...</h2>
-            <p className="mt-4 text-muted-foreground">
-              ClientLogos, Manifesto, Testimonials, HowItWorks, DataFoundation, MagicBento, Integration, and CTA sections will be added next.
-            </p>
-          </div>
-        </section>
-      </main>
+      {/* Placeholder for other sections */}
+      <div style={{ padding: '4rem 2rem', textAlign: 'center', background: '#f5f5f5' }}>
+        <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>More sections coming next...</h2>
+        <p style={{ color: '#666' }}>ClientLogos, Manifesto, Testimonials, HowItWorks, DataFoundation, MagicBento, Integration, and CTA sections will be built section by section.</p>
+      </div>
     </>
   );
 }
