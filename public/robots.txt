@@ -1,0 +1,48 @@
+# Yess.ai - robots.txt
+# AI Crawler Support - Optimized for ChatGPT, Claude, Perplexity, Bing AI
+
+# OpenAI ChatGPT
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic Claude
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Google Bard/Gemini
+User-agent: Google-Extended
+Allow: /
+
+# Bing AI
+User-agent: Bingbot
+Allow: /
+
+# Meta AI
+User-agent: FacebookBot
+Allow: /
+
+# General search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# Disallow admin/private areas (if any in future)
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: *.json$
+
+# Sitemap location
+Sitemap: https://www.yess.ai/sitemap.xml

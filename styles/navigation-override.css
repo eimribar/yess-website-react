@@ -1,0 +1,54 @@
+/* Navigation Override Styles */
+
+/* Override Webflow navbar background */
+.navbar7_component {
+  background-color: transparent !important;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+.navbar7_component.transparent {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.navbar7_component.scrolled {
+  background-color: #ffffff !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Ensure content doesn't jump when navbar becomes fixed */
+.navbar-spacer {
+  height: 72px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 991px) {
+  .navbar-spacer {
+    height: 64px;
+  }
+
+  .navbar7_component {
+    min-height: 4rem;
+  }
+
+  /* Mobile menu should have white background */
+  .navbar7_component .navbar7_menu {
+    background-color: #ffffff;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar7_component {
+    min-height: 4rem;
+  }
+}
+
+/* Smooth transition for all navbar elements */
+.navbar7_component * {
+  transition: opacity 0.3s ease, color 0.3s ease;
+}

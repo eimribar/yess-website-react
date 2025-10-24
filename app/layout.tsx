@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Manrope, Poppins } from "next/font/google";
 import Script from "next/script";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
+import RB2BLoader from "@/components/RB2BLoader";
 import "./globals.css";
 
 const manrope = Manrope({
@@ -258,11 +260,9 @@ export default function RootLayout({
         </Script>
       </head>
       <body className={`${manrope.variable} ${inter.variable} ${poppins.variable} body`}>
-        <div className="page-wrapper">
-          <main className="main-wrapper">
-            {children}
-          </main>
-        </div>
+        <GoogleAnalytics />
+        <RB2BLoader />
+        {children}
 
         {/* Webflow runtime */}
         <Script src="/js/webflow.js" strategy="afterInteractive" />

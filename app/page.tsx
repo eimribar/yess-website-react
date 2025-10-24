@@ -2,6 +2,16 @@
 
 import { useEffect } from 'react';
 import Orb from '@/components/Orb';
+import Navigation from '@/components/Navigation';
+import ClientLogos from '@/components/ClientLogos';
+import IntroSection from '@/components/IntroSection';
+import Testimonials from '@/components/Testimonials';
+import HowItWorks from '@/components/HowItWorks';
+import DataFoundation from '@/components/DataFoundation';
+import MagicBento from '@/components/MagicBento';
+import Integration from '@/components/Integration';
+import CTA from '@/components/CTA';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   useEffect(() => {
@@ -48,8 +58,10 @@ export default function Home() {
   }, []);
 
   return (
-    <>
-      <div className="section_hero">
+    <div className="page-wrapper">
+      <main className="main-wrapper">
+        <Navigation />
+        <div className="section_hero">
         {/* Orb Background */}
         <div className="hero-orb-container" id="hero-orb">
           <Orb hue={166} hoverIntensity={0.3} rotateOnHover={true} />
@@ -83,11 +95,54 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Placeholder for other sections */}
-      <div style={{ padding: '4rem 2rem', textAlign: 'center', background: '#f5f5f5' }}>
-        <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>More sections coming next...</h2>
-        <p style={{ color: '#666' }}>ClientLogos, Manifesto, Testimonials, HowItWorks, DataFoundation, MagicBento, Integration, and CTA sections will be built section by section.</p>
-      </div>
-    </>
+      {/* Client Logos Section */}
+      <ClientLogos />
+
+      {/* Intro Section with Text Reveal Animation */}
+      <IntroSection />
+
+      {/* Testimonials Section */}
+      <Testimonials />
+
+      {/* How It Works Section */}
+      <HowItWorks />
+
+      {/* Data Foundation Section with Layered Animation */}
+      <DataFoundation />
+
+      {/* MagicBento Grid Product Features Section */}
+      <MagicBento />
+
+      {/* Section Divider */}
+      <hr className="section-divider" />
+
+      {/* Integration Section */}
+      <Integration />
+
+      {/* CTA Section */}
+      <CTA />
+
+      {/* Footer */}
+      <Footer />
+      </main>
+
+      {/* Hero decorative images - positioned absolutely */}
+      <img
+        src="/images/Group-33860.webp"
+        loading="lazy"
+        sizes="(max-width: 510px) 100vw, 510px"
+        srcSet="/images/Group-33860-p-500.png 500w, /images/Group-33860.webp 510w"
+        alt=""
+        className="img-hero is-right"
+      />
+      <img
+        src="/images/Group-33861.webp"
+        loading="lazy"
+        sizes="(max-width: 513px) 100vw, 513px"
+        srcSet="/images/Group-33861-p-500.png 500w, /images/Group-33861.webp 513w"
+        alt=""
+        className="img-hero"
+      />
+    </div>
   );
 }
